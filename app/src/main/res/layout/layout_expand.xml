@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:gravity="right"
+    android:paddingLeft="12dp"
+    android:layout_marginTop="50dp">
+
+    <LinearLayout
+        android:id="@+id/ll_btn_up"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button01_selector"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@mipmap/up" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_btn_plus"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/button01_selector"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:src="@mipmap/plus" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_btn_base_high"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/high_bg"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="基准高程"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_base_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_btn_minus"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/button01_selector"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+        <ImageView
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:src="@mipmap/minus" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_btn_down"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/button01_selector"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:src="@mipmap/down" />
+    </LinearLayout>
+
+
+</LinearLayout>

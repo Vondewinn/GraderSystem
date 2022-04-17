@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.baseactivities.BaseActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title"/>
+
+    <RadioGroup
+        android:id="@+id/rg_modes"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp">
+
+        <RadioButton
+            android:id="@+id/rb_network"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="网络模式"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rb_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="电台模式" />
+
+        <RadioButton
+            android:id="@+id/rb_star"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="星基模式" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <!--        <fragment-->
+        <!--            android:id="@+id/fragment1"-->
+        <!--            android:name="com.unmannedfarm.navigationsystem.fragments.NetworkDifferentialFragment"-->
+        <!--            android:layout_width="500dp"-->
+        <!--            android:layout_height="300dp"-->
+        <!--            android:layout_gravity="center"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:id="@+id/net_modes"
+                android:layout_width="400dp"
+                android:layout_height="270dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="域名/IP:"
+                        android:textSize="15sp"
+                        android:textColor="#000000"/>
+
+                    <EditText
+                        android:id="@+id/et_ip"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="2"
+                        android:textSize="15sp"
+                        android:background="@android:drawable/edit_text"
+                        android:imeOptions="actionDone"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="端口:"
+                        android:textSize="15sp"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/et_port"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="2"
+                        android:textSize="15sp"
+                        android:background="@android:drawable/edit_text"
+                        android:imeOptions="actionDone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="差分账号:"
+                        android:textSize="15sp"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/et_account"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="2"
+                        android:textSize="15sp"
+                        android:background="@android:drawable/edit_text"
+                        android:imeOptions="actionDone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="差分密码:"
+                        android:textSize="15sp"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/et_pwd"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="2"
+                        android:textSize="15sp"
+                        android:inputType="textPassword"
+                        android:background="@android:drawable/edit_text"
+                        android:imeOptions="actionDone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="挂载点:"
+                        android:textSize="15sp"
+                        android:textColor="#000000"/>
+                    <EditText
+                        android:id="@+id/et_mpt"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="2"
+                        android:textSize="15sp"
+                        android:background="@android:drawable/edit_text"
+                        android:imeOptions="actionDone"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btn_bs_save"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="保存并退出"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:background="@drawable/button01_selector"/>
+        <Button
+            android:id="@+id/btn_bs_cancel"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="50dp"
+            android:text="取消"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:background="@drawable/button01_selector"
+            android:layout_marginLeft="50dp" />
+    </LinearLayout>
+
+</LinearLayout>
